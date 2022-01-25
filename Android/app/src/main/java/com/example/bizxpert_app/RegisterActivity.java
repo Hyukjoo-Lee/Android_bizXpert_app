@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.bizxpert_app.databinding.ActivityLoginBinding;
 import com.example.bizxpert_app.databinding.ActivityRegisterBinding;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -18,6 +16,7 @@ public class RegisterActivity extends AppCompatActivity {
     private ActivityRegisterBinding binding;
     // Add database reference
     DatabaseReference ref;
+
     // Assign the Users class
     Users users;
 

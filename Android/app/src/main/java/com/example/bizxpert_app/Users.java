@@ -8,7 +8,6 @@ public class Users {
     private String Password;
 
     public Users() {
-
     }
 
     public String getEmail() {
