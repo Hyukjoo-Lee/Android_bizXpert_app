@@ -16,7 +16,9 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RegisterActivity extends AppCompatActivity {
 
     private ActivityRegisterBinding binding;
-    DatabaseReference reff;
+    // Add database reference
+    DatabaseReference ref;
+    // Assign the Users class
     Users users;
 
     @Override
@@ -25,16 +27,19 @@ public class RegisterActivity extends AppCompatActivity {
 
         binding = ActivityRegisterBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
-        reff = FirebaseDatabase.getInstance().getReference().child("Users");
         setContentView(view);
 
+        // Create an object
         users = new Users();
-        reff = FirebaseDatabase.getInstance().getReference().child("Users");
+        // child("") : A new DatabaseReference to the given path
+        ref = FirebaseDatabase.getInstance().getReference().child("Users");
         binding.btnRegister.setOnClickListener(v -> {
+            // Set Email and password input
             users.setEmail(binding.inputEmailRego.getText().toString().trim());
             users.setPassword(binding.inputPasswordRego.getText().toString());
 
-            reff.push().setValue(users);
+            // Push the users object
+            ref.push().setValue(users);
             Toast.makeText(RegisterActivity.this, "data is inserted successfully.", Toast.LENGTH_SHORT).show();
         });
 
