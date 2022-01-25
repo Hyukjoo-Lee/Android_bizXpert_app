@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "416253610217",
+    "project_id": "bizxpert-app",
+    "storage_bucket": "bizxpert-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416253610217:android:4d15bbf0ec8a429b324878",
+        "android_client_info": {
+          "package_name": "com.example.bizxpert_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416253610217-dlbq2s6vrbtveof7eabjp44aok8l87oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm9I8EQEK3QQ9yN9sxSRUJzLxckIybZrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416253610217-dlbq2s6vrbtveof7eabjp44aok8l87oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

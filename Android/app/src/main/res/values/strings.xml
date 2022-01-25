@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BizXpert_app</string>
+    <string name="txtLogin">Login</string>
+    <string name="txtEmail">Email Address</string>
+    <string name="txtPassword">Password</string>
+    <string name="image_caption">Image caption</string>
+    <string name="logo_image">logo image</string>
+    <string name="txtRegister">Don\'t have an account?</string>
+    <string name="txtLogin2">Already have an account?</string>
+    <string name="txtSignIn">Sign In</string>
+    <string name="txtSignUp">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="txtForLogin">Already have an account?</string>
 </resources>
