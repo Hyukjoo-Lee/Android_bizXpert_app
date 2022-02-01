@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundimg"
+    android:background="@drawable/background_login_rego"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,17 +35,19 @@
 
         <TextView
             android:id="@+id/txtEmail"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/txtEmail"
+            android:layout_marginLeft="20dp"
             android:textAlignment="viewStart"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
         <EditText
             android:id="@+id/inputEmail_rego"
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="@string/txtEmail"
@@ -56,8 +59,9 @@
 
         <TextView
             android:id="@+id/txtPassword"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:text="@string/txtPassword"
             android:textAlignment="viewStart"
@@ -66,9 +70,10 @@
 
         <EditText
             android:id="@+id/inputPassword_rego"
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="@string/txtPassword"
             android:inputType="textEmailAddress"
@@ -84,8 +89,8 @@
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="323dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
         android:text="@string/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

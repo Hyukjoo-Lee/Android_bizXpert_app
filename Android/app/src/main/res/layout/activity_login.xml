@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundimg"
+    android:background="@drawable/background_login_rego"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -57,20 +57,23 @@
 
         <TextView
             android:id="@+id/txtEmail"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
             android:text="@string/txtEmail"
+
             android:textAlignment="viewStart"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/inputEmail_rego"
-            android:layout_width="match_parent"
+            android:id="@+id/inputEmail_login"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="jane@gmail.com"
+            android:hint="@string/txtEmail"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:textAlignment="center"
@@ -79,9 +82,10 @@
 
         <TextView
             android:id="@+id/txtPassword"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
             android:text="@string/txtPassword"
             android:textAlignment="viewStart"
             android:textColor="@color/white"
@@ -89,9 +93,10 @@
 
         <EditText
             android:id="@+id/inputPassword_login"
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="@string/txtPassword"
             android:inputType="textEmailAddress"
@@ -107,12 +112,14 @@
         android:id="@+id/btnForLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="323dp"
-        android:text="@string/txtSignUp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/txtLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/txtForRegister"
